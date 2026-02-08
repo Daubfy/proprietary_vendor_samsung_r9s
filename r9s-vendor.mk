@@ -69,7 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/firmware/sb_ll.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_ll.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/sb_music.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_music.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/sb_others.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/sb_others.bin \
-    vendor/samsung/r9s/proprietary/vendor/firmware/secure_configuration.flm.cfg.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/secure_configuration.flm.cfg.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/setfile_2ld.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_2ld.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/setfile_hi1336.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_hi1336.bin \
     vendor/samsung/r9s/proprietary/vendor/firmware/setfile_hi847.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/setfile_hi847.bin \
