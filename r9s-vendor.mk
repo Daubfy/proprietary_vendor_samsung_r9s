@@ -114,18 +114,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/r9s/proprietary/vendor/tee/ffffffff-0000-0000-0000-000000000030:$(TARGET_COPY_OUT_VENDOR)/tee/ffffffff-0000-0000-0000-000000000030
 
 PRODUCT_PACKAGES += \
-    vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0-impl \
-    lib_SoundBooster_ver1070 \
-    libaudioproxy2 \
-    libaudiosaplus_sec \
-    libsamsungSoundbooster_plus \
-    libswdap \
-    libswspatializer \
-    spatializer-aidl-V1-cpp \
-    audio.primary.exynos2100 \
-    lib_SamsungRec_07020 \
-    librecordalive \
     camera.exynos2100 \
+    lib_SoundBooster_ver1070 \
     libbauthserver \
     libbauthtzcommon \
     libegis_fp_normal_sensor_test \
@@ -144,6 +134,11 @@ PRODUCT_PACKAGES += \
     libwrappergps \
     sensors.grip \
     sensors.sensorhub \
+    libaudiosaplus_sec \
+    libsamsungSoundbooster_plus \
+    libswdap \
+    libswspatializer \
+    spatializer-aidl-V1-cpp \
     gpsd
 
 PRODUCT_PACKAGES += \

@@ -12,493 +12,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0-impl",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0-impl.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libhidlbase",
-                "libhidlmemory",
-                "libhidltransport",
-                "liblog",
-                "libaudioproxy2",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0",
-                "vendor.samsung.hardware.bluetooth.a2dp@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0-impl.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libhidlbase",
-                "libhidlmemory",
-                "libhidltransport",
-                "liblog",
-                "libaudioproxy2",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0",
-                "vendor.samsung.hardware.bluetooth.a2dp@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib_SoundBooster_ver1070",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/lib_SoundBooster_ver1070.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/lib_SoundBooster_ver1070.so",
-            ],
-            shared_libs: [
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudioproxy2",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libaudioproxy2.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libtinyalsa_exynos2100",
-                "libtinycompress",
-                "libaudioutils",
-                "libaudioroute_exynos2100",
-                "libalsautils_sec",
-                "libexpat",
-                "libbase",
-                "libhidlbase",
-                "libhidlmemory",
-                "libutils",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0",
-                "libSamsungPostProcessConvertor",
-                "libsecaudioinfo",
-                "libaudioparamupdate",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libaudioproxy2.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libtinyalsa_exynos2100",
-                "libtinycompress",
-                "libaudioutils",
-                "libaudioroute_exynos2100",
-                "libalsautils_sec",
-                "libexpat",
-                "libbase",
-                "libhidlbase",
-                "libhidlmemory",
-                "libutils",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0",
-                "libSamsungPostProcessConvertor",
-                "libsecaudioinfo",
-                "libaudioparamupdate",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaudiosaplus_sec",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/soundfx/libaudiosaplus_sec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libaudioutils",
-                "lib_SoundAlive_play_plus_ver500",
-                "lib_SoundAlive_AlbumArt_ver105",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libaudiosaplus_sec.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libaudioutils",
-                "lib_SoundAlive_play_plus_ver500",
-                "lib_SoundAlive_AlbumArt_ver105",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsamsungSoundbooster_plus",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/soundfx/libsamsungSoundbooster_plus.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "lib_SoundBooster_ver1070",
-                "libsecaudioinfo",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libsamsungSoundbooster_plus.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "lib_SoundBooster_ver1070",
-                "libsecaudioinfo",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libswdap",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/soundfx/libswdap.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libprofileparamstorage",
-                "libspatializerparamstorage",
-                "libsecaudiocoreutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libswdap.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libprofileparamstorage",
-                "libspatializerparamstorage",
-                "libsecaudiocoreutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libswspatializer",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/soundfx/libswspatializer.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libprofileparamstorage",
-                "libspatializerparamstorage",
-                "spatializer-aidl-V1-cpp",
-                "libsecaudiocoreutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/soundfx/libswspatializer.so",
-            ],
-            shared_libs: [
-                "libaudioutils",
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libprofileparamstorage",
-                "libspatializerparamstorage",
-                "spatializer-aidl-V1-cpp",
-                "libsecaudiocoreutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    relative_install_path: "soundfx",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "spatializer-aidl-V1-cpp",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/spatializer-aidl-V1-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/spatializer-aidl-V1-cpp.so",
-            ],
-            shared_libs: [
-                "libbinder",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.primary.exynos2100",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/hw/audio.primary.exynos2100.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libprocessgroup",
-                "libaudioproxy2",
-                "libaudio-ril",
-                "libsecril-client",
-                "libsecaudioinfo",
-                "libfloatingfeature",
-                "librecordalive",
-                "libaudioutils",
-                "libspeakercalibration",
-                "libaboxpcmdump",
-                "liblastaboxmsg",
-                "libaudioroute_exynos2100",
-                "libtinyalsa",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "lib_SamsungRec_07020",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/lib_SamsungRec_07020.so",
-            ],
-            shared_libs: [
-                "libc",
-                "libm",
-                "libdl",
-                "liblog",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "librecordalive",
-    owner: "samsung",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/librecordalive.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "lib_SamsungRec_07020",
-                "libsecaudioinfo",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "32",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "camera.exynos2100",
     owner: "samsung",
     strip: {
@@ -527,6 +40,27 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     relative_install_path: "hw",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "lib_SoundBooster_ver1070",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/lib_SoundBooster_ver1070.so",
+            ],
+            shared_libs: [
+                "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -1053,6 +587,158 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libhardware",
                 "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaudiosaplus_sec",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libaudiosaplus_sec.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libaudioutils",
+                "lib_SoundAlive_play_plus_ver500",
+                "lib_SoundAlive_AlbumArt_ver105",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsamsungSoundbooster_plus",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libsamsungSoundbooster_plus.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "lib_SoundBooster_ver1070",
+                "libsecaudioinfo",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswdap",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libswdap.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libprofileparamstorage",
+                "libspatializerparamstorage",
+                "libsecaudiocoreutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswspatializer",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/soundfx/libswspatializer.so",
+            ],
+            shared_libs: [
+                "libaudioutils",
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libprofileparamstorage",
+                "libspatializerparamstorage",
+                "spatializer-aidl-V1-cpp",
+                "libsecaudiocoreutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "spatializer-aidl-V1-cpp",
+    owner: "samsung",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/spatializer-aidl-V1-cpp.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
