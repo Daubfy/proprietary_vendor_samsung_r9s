@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/r9s
 
 PRODUCT_COPY_FILES += \
-<<<<<<< HEAD:r9s-vendor.mk
     vendor/samsung/r9s/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/r9s/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/samsung/r9s/proprietary/vendor/etc/floating_feature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/floating_feature.xml \
@@ -119,6 +118,7 @@ PRODUCT_PACKAGES += \
     libbauthtzcommon \
     libegis_fp_normal_sensor_test \
     libexynoscamera3 \
+    libexynoscamera_ssl_plugin \
     libexynoscamera_vpl_plugin \
     libgf_in_system_lib \
     libqfp_sensortest \
